@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C3D1F1B14F1F79A00A6A878 /* JJAssert.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C3D1F1314F1F79A00A6A878 /* JJAssert.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C3D1F1C14F1F79A00A6A878 /* JJAssert.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3D1F1414F1F79A00A6A878 /* JJAssert.m */; };
+		3C3D1F1D14F1F79A00A6A878 /* JJBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C3D1F1514F1F79A00A6A878 /* JJBase64.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C3D1F1E14F1F79A00A6A878 /* JJBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3D1F1614F1F79A00A6A878 /* JJBase64.m */; };
+		3C3D1F2114F1F79A00A6A878 /* JJLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C3D1F1914F1F79A00A6A878 /* JJLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C3D1F2214F1F79A00A6A878 /* JJLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3D1F1A14F1F79A00A6A878 /* JJLog.m */; };
+		3C3D1F2514F1FBA500A6A878 /* JJLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CC78D6014F1F4CD00DB19F5 /* JJLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CC78D5C14F1F4CD00DB19F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC78D5B14F1F4CD00DB19F5 /* Foundation.framework */; };
+		3CC78D6A14F1F4CD00DB19F5 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC78D6914F1F4CD00DB19F5 /* SenTestingKit.framework */; };
+		3CC78D6C14F1F4CD00DB19F5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC78D6B14F1F4CD00DB19F5 /* UIKit.framework */; };
+		3CC78D6D14F1F4CD00DB19F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC78D5B14F1F4CD00DB19F5 /* Foundation.framework */; };
+		3CC78D7014F1F4CD00DB19F5 /* libJJLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC78D5814F1F4CD00DB19F5 /* libJJLib.a */; };
+		3CC78D7614F1F4CD00DB19F5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3CC78D7414F1F4CD00DB19F5 /* InfoPlist.strings */; };
+		3CC78D7914F1F4CD00DB19F5 /* JJLibTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC78D7814F1F4CD00DB19F5 /* JJLibTests.m */; };
+		3CF91B5814F2EC97002427D3 /* UIColor+JJLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CF91B5614F2EC97002427D3 /* UIColor+JJLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CF91B5914F2EC97002427D3 /* UIColor+JJLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF91B5714F2EC97002427D3 /* UIColor+JJLib.m */; };
+		3CF91B5C14F2EEF5002427D3 /* NSDate+JJLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CF91B5A14F2EEF5002427D3 /* NSDate+JJLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CF91B5D14F2EEF5002427D3 /* NSDate+JJLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF91B5B14F2EEF5002427D3 /* NSDate+JJLib.m */; };
+		B189BF8815BC7745009F8B9D /* UIDevice+JJLib.h in Headers */ = {isa = PBXBuildFile; fileRef = B189BF8615BC7745009F8B9D /* UIDevice+JJLib.h */; };
+		B189BF8915BC7745009F8B9D /* UIDevice+JJLib.m in Sources */ = {isa = PBXBuildFile; fileRef = B189BF8715BC7745009F8B9D /* UIDevice+JJLib.m */; };
+		B1B3B84A15BBE82400D20088 /* UIImage+JJLib.h in Headers */ = {isa = PBXBuildFile; fileRef = B1B3B84815BBE82300D20088 /* UIImage+JJLib.h */; };
+		B1B3B84B15BBE82400D20088 /* UIImage+JJLib.m in Sources */ = {isa = PBXBuildFile; fileRef = B1B3B84915BBE82400D20088 /* UIImage+JJLib.m */; };
+		B1B3B84F15BBE9C900D20088 /* NSString+JJLib.h in Headers */ = {isa = PBXBuildFile; fileRef = B1B3B84D15BBE9C500D20088 /* NSString+JJLib.h */; };
+		B1B3B85015BBE9C900D20088 /* NSString+JJLib.m in Sources */ = {isa = PBXBuildFile; fileRef = B1B3B84E15BBE9C600D20088 /* NSString+JJLib.m */; };
+		FA74ED14157ECBB400A6EBBB /* JJSecureDefaults.h in Headers */ = {isa = PBXBuildFile; fileRef = FA74ED12157ECBB400A6EBBB /* JJSecureDefaults.h */; };
+		FA74ED15157ECBB400A6EBBB /* JJSecureDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = FA74ED13157ECBB400A6EBBB /* JJSecureDefaults.m */; };
+		FA74ED1D157ED16200A6EBBB /* NSData+JJLib.h in Headers */ = {isa = PBXBuildFile; fileRef = FA74ED1B157ED16200A6EBBB /* NSData+JJLib.h */; };
+		FA74ED1E157ED16200A6EBBB /* NSData+JJLib.m in Sources */ = {isa = PBXBuildFile; fileRef = FA74ED1C157ED16200A6EBBB /* NSData+JJLib.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3CC78D6E14F1F4CD00DB19F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CC78D4F14F1F4CD00DB19F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CC78D5714F1F4CD00DB19F5;
+			remoteInfo = JJLib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3C3D1F1314F1F79A00A6A878 /* JJAssert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJAssert.h; sourceTree = "<group>"; };
+		3C3D1F1414F1F79A00A6A878 /* JJAssert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJAssert.m; sourceTree = "<group>"; };
+		3C3D1F1514F1F79A00A6A878 /* JJBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJBase64.h; sourceTree = "<group>"; };
+		3C3D1F1614F1F79A00A6A878 /* JJBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJBase64.m; sourceTree = "<group>"; };
+		3C3D1F1914F1F79A00A6A878 /* JJLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJLog.h; sourceTree = "<group>"; };
+		3C3D1F1A14F1F79A00A6A878 /* JJLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJLog.m; sourceTree = "<group>"; };
+		3CC78D5814F1F4CD00DB19F5 /* libJJLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJJLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CC78D5B14F1F4CD00DB19F5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3CC78D5F14F1F4CD00DB19F5 /* JJLib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JJLib-Prefix.pch"; sourceTree = "<group>"; };
+		3CC78D6014F1F4CD00DB19F5 /* JJLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JJLib.h; sourceTree = "<group>"; };
+		3CC78D6814F1F4CD00DB19F5 /* JJLibTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JJLibTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CC78D6914F1F4CD00DB19F5 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		3CC78D6B14F1F4CD00DB19F5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		3CC78D7314F1F4CD00DB19F5 /* JJLibTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JJLibTests-Info.plist"; sourceTree = "<group>"; };
+		3CC78D7514F1F4CD00DB19F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3CC78D7714F1F4CD00DB19F5 /* JJLibTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JJLibTests.h; sourceTree = "<group>"; };
+		3CC78D7814F1F4CD00DB19F5 /* JJLibTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJLibTests.m; sourceTree = "<group>"; };
+		3CF91B5614F2EC97002427D3 /* UIColor+JJLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+JJLib.h"; sourceTree = "<group>"; };
+		3CF91B5714F2EC97002427D3 /* UIColor+JJLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+JJLib.m"; sourceTree = "<group>"; };
+		3CF91B5A14F2EEF5002427D3 /* NSDate+JJLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+JJLib.h"; sourceTree = "<group>"; };
+		3CF91B5B14F2EEF5002427D3 /* NSDate+JJLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+JJLib.m"; sourceTree = "<group>"; };
+		B189BF8615BC7745009F8B9D /* UIDevice+JJLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+JJLib.h"; sourceTree = "<group>"; };
+		B189BF8715BC7745009F8B9D /* UIDevice+JJLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+JJLib.m"; sourceTree = "<group>"; };
+		B189BF8C15BC87C1009F8B9D /* UpdateRevisionPlistGit.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = UpdateRevisionPlistGit.sh; path = scripts/UpdateRevisionPlistGit.sh; sourceTree = "<group>"; };
+		B189BF8D15BC87C1009F8B9D /* UpdateRevisionPlistMercurial.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = UpdateRevisionPlistMercurial.sh; path = scripts/UpdateRevisionPlistMercurial.sh; sourceTree = "<group>"; };
+		B189BF8E15BC87C1009F8B9D /* UpdateRevisionPlistSubversion.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = UpdateRevisionPlistSubversion.sh; path = scripts/UpdateRevisionPlistSubversion.sh; sourceTree = "<group>"; };
+		B1B3B84815BBE82300D20088 /* UIImage+JJLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JJLib.h"; sourceTree = "<group>"; };
+		B1B3B84915BBE82400D20088 /* UIImage+JJLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JJLib.m"; sourceTree = "<group>"; };
+		B1B3B84D15BBE9C500D20088 /* NSString+JJLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JJLib.h"; sourceTree = "<group>"; };
+		B1B3B84E15BBE9C600D20088 /* NSString+JJLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JJLib.m"; sourceTree = "<group>"; };
+		FA74ED12157ECBB400A6EBBB /* JJSecureDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJSecureDefaults.h; sourceTree = "<group>"; };
+		FA74ED13157ECBB400A6EBBB /* JJSecureDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJSecureDefaults.m; sourceTree = "<group>"; };
+		FA74ED1B157ED16200A6EBBB /* NSData+JJLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+JJLib.h"; sourceTree = "<group>"; };
+		FA74ED1C157ED16200A6EBBB /* NSData+JJLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+JJLib.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3CC78D5514F1F4CD00DB19F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CC78D5C14F1F4CD00DB19F5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CC78D6414F1F4CD00DB19F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CC78D6A14F1F4CD00DB19F5 /* SenTestingKit.framework in Frameworks */,
+				3CC78D6C14F1F4CD00DB19F5 /* UIKit.framework in Frameworks */,
+				3CC78D6D14F1F4CD00DB19F5 /* Foundation.framework in Frameworks */,
+				3CC78D7014F1F4CD00DB19F5 /* libJJLib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3CC78D4D14F1F4CD00DB19F5 = {
+			isa = PBXGroup;
+			children = (
+				3CC78D5D14F1F4CD00DB19F5 /* JJLib */,
+				3CC78D7114F1F4CD00DB19F5 /* JJLibTests */,
+				3CC78D5A14F1F4CD00DB19F5 /* Frameworks */,
+				B189BF8B15BC87AD009F8B9D /* scripts */,
+				3CC78D5914F1F4CD00DB19F5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3CC78D5914F1F4CD00DB19F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3CC78D5814F1F4CD00DB19F5 /* libJJLib.a */,
+				3CC78D6814F1F4CD00DB19F5 /* JJLibTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3CC78D5A14F1F4CD00DB19F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CC78D5B14F1F4CD00DB19F5 /* Foundation.framework */,
+				3CC78D6914F1F4CD00DB19F5 /* SenTestingKit.framework */,
+				3CC78D6B14F1F4CD00DB19F5 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3CC78D5D14F1F4CD00DB19F5 /* JJLib */ = {
+			isa = PBXGroup;
+			children = (
+				3C3D1F1314F1F79A00A6A878 /* JJAssert.h */,
+				3C3D1F1414F1F79A00A6A878 /* JJAssert.m */,
+				3C3D1F1514F1F79A00A6A878 /* JJBase64.h */,
+				3C3D1F1614F1F79A00A6A878 /* JJBase64.m */,
+				3CC78D6014F1F4CD00DB19F5 /* JJLib.h */,
+				3C3D1F1914F1F79A00A6A878 /* JJLog.h */,
+				3C3D1F1A14F1F79A00A6A878 /* JJLog.m */,
+				FA74ED12157ECBB400A6EBBB /* JJSecureDefaults.h */,
+				FA74ED13157ECBB400A6EBBB /* JJSecureDefaults.m */,
+				FA74ED1B157ED16200A6EBBB /* NSData+JJLib.h */,
+				FA74ED1C157ED16200A6EBBB /* NSData+JJLib.m */,
+				3CF91B5A14F2EEF5002427D3 /* NSDate+JJLib.h */,
+				3CF91B5B14F2EEF5002427D3 /* NSDate+JJLib.m */,
+				B1B3B84D15BBE9C500D20088 /* NSString+JJLib.h */,
+				B1B3B84E15BBE9C600D20088 /* NSString+JJLib.m */,
+				3CF91B5614F2EC97002427D3 /* UIColor+JJLib.h */,
+				3CF91B5714F2EC97002427D3 /* UIColor+JJLib.m */,
+				B189BF8615BC7745009F8B9D /* UIDevice+JJLib.h */,
+				B189BF8715BC7745009F8B9D /* UIDevice+JJLib.m */,
+				B1B3B84815BBE82300D20088 /* UIImage+JJLib.h */,
+				B1B3B84915BBE82400D20088 /* UIImage+JJLib.m */,
+				3CC78D5E14F1F4CD00DB19F5 /* Supporting Files */,
+			);
+			path = JJLib;
+			sourceTree = "<group>";
+		};
+		3CC78D5E14F1F4CD00DB19F5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3CC78D5F14F1F4CD00DB19F5 /* JJLib-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3CC78D7114F1F4CD00DB19F5 /* JJLibTests */ = {
+			isa = PBXGroup;
+			children = (
+				3CC78D7714F1F4CD00DB19F5 /* JJLibTests.h */,
+				3CC78D7814F1F4CD00DB19F5 /* JJLibTests.m */,
+				3CC78D7214F1F4CD00DB19F5 /* Supporting Files */,
+			);
+			path = JJLibTests;
+			sourceTree = "<group>";
+		};
+		3CC78D7214F1F4CD00DB19F5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3CC78D7314F1F4CD00DB19F5 /* JJLibTests-Info.plist */,
+				3CC78D7414F1F4CD00DB19F5 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B189BF8B15BC87AD009F8B9D /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+				B189BF8C15BC87C1009F8B9D /* UpdateRevisionPlistGit.sh */,
+				B189BF8D15BC87C1009F8B9D /* UpdateRevisionPlistMercurial.sh */,
+				B189BF8E15BC87C1009F8B9D /* UpdateRevisionPlistSubversion.sh */,
+			);
+			name = scripts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3CC78D5614F1F4CD00DB19F5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C3D1F1B14F1F79A00A6A878 /* JJAssert.h in Headers */,
+				3C3D1F1D14F1F79A00A6A878 /* JJBase64.h in Headers */,
+				3C3D1F2114F1F79A00A6A878 /* JJLog.h in Headers */,
+				3C3D1F2514F1FBA500A6A878 /* JJLib.h in Headers */,
+				3CF91B5814F2EC97002427D3 /* UIColor+JJLib.h in Headers */,
+				3CF91B5C14F2EEF5002427D3 /* NSDate+JJLib.h in Headers */,
+				FA74ED14157ECBB400A6EBBB /* JJSecureDefaults.h in Headers */,
+				FA74ED1D157ED16200A6EBBB /* NSData+JJLib.h in Headers */,
+				B1B3B84A15BBE82400D20088 /* UIImage+JJLib.h in Headers */,
+				B1B3B84F15BBE9C900D20088 /* NSString+JJLib.h in Headers */,
+				B189BF8815BC7745009F8B9D /* UIDevice+JJLib.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3CC78D5714F1F4CD00DB19F5 /* JJLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CC78D7C14F1F4CD00DB19F5 /* Build configuration list for PBXNativeTarget "JJLib" */;
+			buildPhases = (
+				3CC78D5414F1F4CD00DB19F5 /* Sources */,
+				3CC78D5514F1F4CD00DB19F5 /* Frameworks */,
+				3CC78D5614F1F4CD00DB19F5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JJLib;
+			productName = JJLib;
+			productReference = 3CC78D5814F1F4CD00DB19F5 /* libJJLib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		3CC78D6714F1F4CD00DB19F5 /* JJLibTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CC78D7F14F1F4CD00DB19F5 /* Build configuration list for PBXNativeTarget "JJLibTests" */;
+			buildPhases = (
+				3CC78D6314F1F4CD00DB19F5 /* Sources */,
+				3CC78D6414F1F4CD00DB19F5 /* Frameworks */,
+				3CC78D6514F1F4CD00DB19F5 /* Resources */,
+				3CC78D6614F1F4CD00DB19F5 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3CC78D6F14F1F4CD00DB19F5 /* PBXTargetDependency */,
+			);
+			name = JJLibTests;
+			productName = JJLibTests;
+			productReference = 3CC78D6814F1F4CD00DB19F5 /* JJLibTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3CC78D4F14F1F4CD00DB19F5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = Betfair;
+			};
+			buildConfigurationList = 3CC78D5214F1F4CD00DB19F5 /* Build configuration list for PBXProject "JJLib" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3CC78D4D14F1F4CD00DB19F5;
+			productRefGroup = 3CC78D5914F1F4CD00DB19F5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3CC78D5714F1F4CD00DB19F5 /* JJLib */,
+				3CC78D6714F1F4CD00DB19F5 /* JJLibTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3CC78D6514F1F4CD00DB19F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CC78D7614F1F4CD00DB19F5 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3CC78D6614F1F4CD00DB19F5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3CC78D5414F1F4CD00DB19F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C3D1F1C14F1F79A00A6A878 /* JJAssert.m in Sources */,
+				3C3D1F1E14F1F79A00A6A878 /* JJBase64.m in Sources */,
+				3C3D1F2214F1F79A00A6A878 /* JJLog.m in Sources */,
+				3CF91B5914F2EC97002427D3 /* UIColor+JJLib.m in Sources */,
+				3CF91B5D14F2EEF5002427D3 /* NSDate+JJLib.m in Sources */,
+				FA74ED15157ECBB400A6EBBB /* JJSecureDefaults.m in Sources */,
+				FA74ED1E157ED16200A6EBBB /* NSData+JJLib.m in Sources */,
+				B1B3B84B15BBE82400D20088 /* UIImage+JJLib.m in Sources */,
+				B1B3B85015BBE9C900D20088 /* NSString+JJLib.m in Sources */,
+				B189BF8915BC7745009F8B9D /* UIDevice+JJLib.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CC78D6314F1F4CD00DB19F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CC78D7914F1F4CD00DB19F5 /* JJLibTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3CC78D6F14F1F4CD00DB19F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3CC78D5714F1F4CD00DB19F5 /* JJLib */;
+			targetProxy = 3CC78D6E14F1F4CD00DB19F5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3CC78D7414F1F4CD00DB19F5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3CC78D7514F1F4CD00DB19F5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3CC78D7A14F1F4CD00DB19F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3CC78D7B14F1F4CD00DB19F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3CC78D7D14F1F4CD00DB19F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/JJLib.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JJLib/JJLib-Prefix.pch";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3CC78D7E14F1F4CD00DB19F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/JJLib.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JJLib/JJLib-Prefix.pch";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		3CC78D8014F1F4CD00DB19F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JJLib/JJLib-Prefix.pch";
+				INFOPLIST_FILE = "JJLibTests/JJLibTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		3CC78D8114F1F4CD00DB19F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JJLib/JJLib-Prefix.pch";
+				INFOPLIST_FILE = "JJLibTests/JJLibTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3CC78D5214F1F4CD00DB19F5 /* Build configuration list for PBXProject "JJLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CC78D7A14F1F4CD00DB19F5 /* Debug */,
+				3CC78D7B14F1F4CD00DB19F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CC78D7C14F1F4CD00DB19F5 /* Build configuration list for PBXNativeTarget "JJLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CC78D7D14F1F4CD00DB19F5 /* Debug */,
+				3CC78D7E14F1F4CD00DB19F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CC78D7F14F1F4CD00DB19F5 /* Build configuration list for PBXNativeTarget "JJLibTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CC78D8014F1F4CD00DB19F5 /* Debug */,
+				3CC78D8114F1F4CD00DB19F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3CC78D4F14F1F4CD00DB19F5 /* Project object */;
+}
