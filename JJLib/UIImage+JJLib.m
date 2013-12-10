@@ -14,7 +14,7 @@
 
 @implementation UIImage (JJLib)
 
-+ (UIImage *)imageFromScreenshot
++ (UIImage *)imageWithScreenshot
 {
     UIWindow *window = [UIApplication sharedApplication].keyWindow;
     

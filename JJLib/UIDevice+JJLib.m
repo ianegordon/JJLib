@@ -40,4 +40,23 @@
 }
 */
 
+- (BOOL)isRetina
+{
+    BOOL isRetina = [[UIScreen mainScreen] scale] == 2.0;
+    
+    return isRetina;
+}
+
+- (BOOL)isTablet
+{
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+    {
+        return YES;
+    }
+    else
+    {
+        return NO;
+    }
+}
+
 @end

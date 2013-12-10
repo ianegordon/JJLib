@@ -19,10 +19,10 @@
 {
     CFUUIDRef UUID = CFUUIDCreate(kCFAllocatorDefault);
     
-    NSString *UUIDString = [(NSString *)CFUUIDCreateString(kCFAllocatorDefault, UUID) autorelease];
+    NSString *UUIDString = (__bridge_transfer NSString *)CFUUIDCreateString(kCFAllocatorDefault, UUID);
     
     CFRelease(UUID);
-    UUID = nil;
+    UUID = NULL;
     
     return UUIDString;
 }
@@ -37,13 +37,13 @@
 	
 	char* pachOutput = NULL;
 	size_t cbEncodedLength = 0;
-	boolRetVal = Base64Encode( [data bytes], [data length], &pachOutput, &cbEncodedLength, YES);
+	boolRetVal = Base64Encode([data bytes], [data length], &pachOutput, &cbEncodedLength, YES);
 	
 	if (false == boolRetVal)
 		return nil;
 	else 
 	{
-		NSString* nsEncoded = [[[NSString alloc] initWithBytes:pachOutput length:cbEncodedLength encoding:NSASCIIStringEncoding] autorelease];
+		NSString* nsEncoded = [[NSString alloc] initWithBytes:pachOutput length:cbEncodedLength encoding:NSASCIIStringEncoding];
 		
 		free(pachOutput);
 		pachOutput = NULL;
@@ -60,18 +60,18 @@
     
     NSString *charactersToEscape = @"!*'\"();:@&=+$,/?%#[]% ";
     
-    NSString *encodedString = (NSString *)CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault, (CFStringRef)self,                                                                                   (CFStringRef)charactersToLeaveUnescaped, (CFStringRef)charactersToEscape, kCFStringEncodingUTF8);
+    NSString *encodedString = (__bridge_transfer NSString *)CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault, (CFStringRef)self,                                                                                   (CFStringRef)charactersToLeaveUnescaped, (CFStringRef)charactersToEscape, kCFStringEncodingUTF8);
     
-    return [encodedString autorelease];
+    return encodedString;
 }
 
 - (NSString *)stringWithURIPercentDecoding
 {
     NSString *charactersToLeaveEscaped = nil;
     
-    NSString *decodedString = (NSString *)CFURLCreateStringByReplacingPercentEscapes(kCFAllocatorDefault, (CFStringRef)self, (CFStringRef)charactersToLeaveEscaped);    
+    NSString *decodedString = (__bridge_transfer NSString *)CFURLCreateStringByReplacingPercentEscapes(kCFAllocatorDefault, (CFStringRef)self, (CFStringRef)charactersToLeaveEscaped);
     
-    return [decodedString autorelease];
+    return decodedString;
 }
 
 @end

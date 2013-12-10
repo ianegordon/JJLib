@@ -12,6 +12,6 @@
 
 @interface UIImage (JJLib)
 
-+ (UIImage *)imageFromScreenshot;
++ (UIImage *)imageWithScreenshot;
 
 @end

@@ -32,7 +32,7 @@
 		B1B3B84F15BBE9C900D20088 /* NSString+JJLib.h in Headers */ = {isa = PBXBuildFile; fileRef = B1B3B84D15BBE9C500D20088 /* NSString+JJLib.h */; };
 		B1B3B85015BBE9C900D20088 /* NSString+JJLib.m in Sources */ = {isa = PBXBuildFile; fileRef = B1B3B84E15BBE9C600D20088 /* NSString+JJLib.m */; };
 		FA74ED14157ECBB400A6EBBB /* JJSecureDefaults.h in Headers */ = {isa = PBXBuildFile; fileRef = FA74ED12157ECBB400A6EBBB /* JJSecureDefaults.h */; };
-		FA74ED15157ECBB400A6EBBB /* JJSecureDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = FA74ED13157ECBB400A6EBBB /* JJSecureDefaults.m */; };
+		FA74ED15157ECBB400A6EBBB /* JJSecureDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = FA74ED13157ECBB400A6EBBB /* JJSecureDefaults.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		FA74ED1D157ED16200A6EBBB /* NSData+JJLib.h in Headers */ = {isa = PBXBuildFile; fileRef = FA74ED1B157ED16200A6EBBB /* NSData+JJLib.h */; };
 		FA74ED1E157ED16200A6EBBB /* NSData+JJLib.m in Sources */ = {isa = PBXBuildFile; fileRef = FA74ED1C157ED16200A6EBBB /* NSData+JJLib.m */; };
 /* End PBXBuildFile section */
@@ -408,6 +408,7 @@
 		3CC78D7D14F1F4CD00DB19F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				DSTROOT = /tmp/JJLib.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JJLib/JJLib-Prefix.pch";
@@ -425,6 +426,7 @@
 		3CC78D7E14F1F4CD00DB19F5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				DSTROOT = /tmp/JJLib.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JJLib/JJLib-Prefix.pch";

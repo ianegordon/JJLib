@@ -13,5 +13,7 @@
 @interface UIDevice (JJLib)
 
 @property (readonly) NSString *hardwarePlatform; // iPhone3,1
+@property (readonly) BOOL isRetina;
+@property (readonly) BOOL isTablet;
 
 @end

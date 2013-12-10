@@ -27,7 +27,7 @@ void JJLog(NSString *format, ...)
     va_list args;
     va_start(args, format);
     
-    NSString *formattedString = [[[NSString alloc] initWithFormat:format arguments:args] autorelease];
+    NSString *formattedString = [[NSString alloc] initWithFormat:format arguments:args];
     NSLog(@"%@", formattedString);
     
     va_end(args);
@@ -46,7 +46,7 @@ void JJFileLog(NSString *format, ...)
     va_list args;
     va_start(args, format);
     
-    NSString *formattedString = [[[NSString alloc] initWithFormat:format arguments:args] autorelease];
+    NSString *formattedString = [[NSString alloc] initWithFormat:format arguments:args];
 
     NSError *error = nil;
     [formattedString writeToFile:logFilename atomically:YES encoding:NSUTF8StringEncoding error:&error];
