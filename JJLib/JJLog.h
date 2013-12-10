@@ -1,7 +1,7 @@
 //   |\  |\
 //  _| \_| \  JJLog.h
 // / |  \|  \
-// \ |  /|  / JJLib  Copyright (c) 2007-2012  Ian Gordon
+// \ |  /|  / JJLib  Copyright (c) 2007-2013  Ian Gordon
 //  \__/\__/
 
 // JJLog is an alternative to NSLog that can be enabled or disabled with JJSetEnableLog()

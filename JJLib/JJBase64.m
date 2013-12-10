@@ -1,7 +1,7 @@
 //   |\  |\
 //  _| \_| \  JJBase64.m
 // / |  \|  \
-// \ |  /|  / JJLib  Copyright (c) 2007-2012  Ian Gordon
+// \ |  /|  / JJLib  Copyright (c) 2007-2013  Ian Gordon
 //  \__/\__/
 
 
